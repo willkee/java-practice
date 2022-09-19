@@ -1,0 +1,15 @@
+package q2;
+
+public class Ops {
+	String instance = "var";
+	
+	// In Java "=" is assignment
+	// In Java, "==" is comparison
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+	}
+	
+}

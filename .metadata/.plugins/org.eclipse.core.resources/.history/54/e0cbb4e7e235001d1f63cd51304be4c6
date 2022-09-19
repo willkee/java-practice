@@ -1,0 +1,26 @@
+package q2;
+
+public class Exception {
+	
+	/*
+	 * Exception events:
+	 * 
+	 * Reading corrupted file
+	 * Network connection failure
+	 * Division by zero
+	 * Calling method without an object
+	 * 
+	 * types:
+	 * IOException
+	 * ConnectException
+	 * ArithmeticException
+	 * NullPointerException
+	 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 5 / 0;
+		
+	}
+
+}

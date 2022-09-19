@@ -1,0 +1,135 @@
+Java is a strongly-typed language
+need to specify a specific data type for each variable
+
+We write code into Classes
+Encapsulation - limiting what is being accessed
+Inheritance - reusing classes
+Abstraction - parent class that generalizes certain behavior
+Polymorphism - objects to change behavior under different circumstances
+
+
+Primitive data types:
+- Numeric (whole)
+- Numeric (decimal)
+- Text
+- True/false
+
+
+(types: byte, short, int, long, float, double, char, boolean)
+
+- non-primitive data types:
+- any class you want, you may create your own types
+- string: multiple characters together
+
+Arrays
+- stores multiple values in a single reference variable
+- store in a continuous (sequential) block of memory
+- Access elements by index
+- Values must be the same data type
+
+Methods
+
+- method signature is the method name and parameters
+
+public void go() {}       object.go();
+public void go (int speed) {}       object.go(100);
+
+// Method overloading is using the same method name with different parameters
+
+Static methods are called without an object:
+
+Math.random();
+Math.pow(2, 31);
+Math.tan(90);
+
+Methods with non-void return type must have a return statement
+
+Stacks vs Heaps
+
+Stack: 
+- method calls
+- variables declared in methods
+- reference variables
+- cleaned up as method completes
+
+Heap:
+-objects
+- instance variables or state of object
+- JVM cleans up objects not in use
+
+Inheritance:
+- passing down state and behavior from one class to another
+- parent/child relationship
+	- Example: Parent: Cucumber, Child: Pickle
+- Extensibility to change existing classes
+
+class Cucumber {}
+
+class Pickle extends Cucumber {}
+
+Variables can be shadowed
+Parent defines variable x and so does Child
+
+super keyword references parent class
+"this" keyword references current class
+
+EVERY CLASS in Java inherits from java.lang.Object
+
+extends Object is implied
+
+The first line of a constructor must be a call to super or this
+
+Calling a constructor causes a chain of constructors to fire
+
+Object -> Employee -> Software Professional -> Java Developer
+
+
+ABSTRACTION
+
+- Building partial or incomplete classes
+- Serves as a foundation for other classes
+- Generalizations group shared functionality into a parent
+- Specialization extend them further to define behavior (triangle is a shape)
+
+Abstract Classes:
+Partially built classes
+Methods defined abstract do not need a method body
+May have 0 to many abstract methods
+class must be declared as "abstract" to allow abstract methods
+Abstract classes cannot be instantiated
+Abstract classes can extend other abstract classes
+
+abstract class Shape {
+	abstract double area();
+}
+
+Interfaces are 100% abstract
+Define a contract that classes follow
+Usually used to establish API behavior
+Interface methods are implicitly public abstract
+Classes can implement many interfaces
+Abstract class (what it is), Interface (what it does)
+
+interface Drawable {
+	void draw();
+}
+
+POLYMORPHISM
+- Ability for objects to be used very flexibly
+
+2 KEY CONCEPTS: COVARIANCE, VIRTUAL METHOD
+
+- Covariance Invocation
+	- Covariant assignment must pass the IS-A check
+	- Animal animal = new Dog();
+		Since dog is an animal, this compiles
+	
+	
+- Virtual Method Invocation
+	- Java splices memory between stack and heap
+	stack holds references variables and method calls
+	main method creates dog object, references as animal
+	- dog created in heap
+	speak method called on dog using object on the heap
+	
+

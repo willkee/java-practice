@@ -1,0 +1,47 @@
+package q2;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class Exception {
+	
+	/*
+	 * Exception events:
+	 * 
+	 * Reading corrupted file
+	 * Network connection failure
+	 * Division by zero
+	 * Calling method without an object
+	 * 
+	 * types:
+	 * IOException
+	 * ConnectException
+	 * ArithmeticException
+	 * NullPointerException
+	 */
+	
+	static FileInputStream file;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int x = 5 / 0;
+//		Object obj = null;
+//		obj.toString();
+//		int[] arr = new int[5];
+//		arr[100] = 10;
+		
+//		try {	
+//			file = new FileInputStream("file.txt");			
+//		} catch (FileNotFoundException e) {
+//			// Recovery procedures
+////			create file, then open
+//			// log exception
+//		}
+		read();
+	}
+	
+	static void read() throws FileNotFoundException {
+		FileInputStream file = new FileInputStream("file.txt");
+	}
+
+}

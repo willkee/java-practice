@@ -1,0 +1,17 @@
+
+public class Store {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// reference type is Furniture
+		// object type is Chair
+		
+		Furniture chair = new Chair();
+		System.out.println(chair);
+	}
+
+}
+
+class Furniture {}
+class Chair extends Furniture {}

@@ -1,0 +1,25 @@
+package q2;
+
+public class Switch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		switchCase("B");
+	}
+	
+	static void switchCase(String val) {
+		switch(val) {
+			case "A": {
+				System.out.println("A");
+			}
+			case "B": {
+				System.out.println("B");
+			}
+			default: {
+				// default is a catch-all
+				System.out.println("Default");
+			}
+		}
+	}
+
+}

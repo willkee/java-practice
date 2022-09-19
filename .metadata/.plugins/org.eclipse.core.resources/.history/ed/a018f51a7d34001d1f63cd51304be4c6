@@ -1,0 +1,18 @@
+
+public class Vehicle {
+//variable declarations must end in semicolon
+int speed;
+
+//method
+//void is the return type, name of the method, then parameters
+void accelerate() {
+	// method body
+	
+}
+
+//constructor
+Vehicle() {
+	speed = 0;
+	
+}
+}

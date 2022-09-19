@@ -1,0 +1,39 @@
+Java is a strongly-typed language
+need to specify a specific data type for each variable
+
+Primitive data types:
+- Numeric (whole)
+- Numeric (decimal)
+- Text
+- True/false
+
+
+(types: byte, short, int, long, float, double, char, boolean)
+
+- non-primitive data types:
+- any class you want, you may create your own types
+- string: multiple characters together
+
+Arrays
+- stores multiple values in a single reference variable
+- store in a continuous (sequential) block of memory
+- Access elements by index
+- Values must be the same data type
+
+Methods
+
+- method signature is the method name and parameters
+
+public void go() {}       object.go();
+public void go (int speed) {}       object.go(100);
+
+// Method overloading is using the same method name with different parameters
+
+Static methods are called without an object:
+
+Math.random();
+Math.pow(2, 31);
+Math.tan(90);
+
+Methods with non-void return type must have a return statement
+

@@ -1,0 +1,17 @@
+package q2;
+
+public class While {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		loop();
+	}
+	
+	static void loop() {
+		boolean running = true;
+		while (running) {
+			System.out.println("Running");
+		}
+	}
+
+}

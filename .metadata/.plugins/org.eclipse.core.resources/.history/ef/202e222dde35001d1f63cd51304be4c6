@@ -1,0 +1,20 @@
+package q2;
+
+public class IfElse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		branch(false);
+	}
+	
+	static void branch (boolean condition) {
+		if (condition) {
+			// if true:
+			System.out.println("True");
+		} else {
+			System.out.println("False");
+		}
+		
+	}
+
+}

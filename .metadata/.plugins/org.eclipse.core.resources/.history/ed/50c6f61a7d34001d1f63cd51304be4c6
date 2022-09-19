@@ -1,0 +1,30 @@
+
+
+public class HelloWorld {
+//	public static void main(String[] args) {
+//		System.out.println("Hello World!");
+//	}
+	static public void main(String[] args) {
+	System.out.println("Hello World!");
+	}
+}
+
+// Java is a strongly-typed language
+// need to specify a specific data type for each variable
+/*
+
+Primitive data types:
+- Numeric (whole)
+- Numeric (decimal)
+- Text
+- True/false
+
+
+(types: byte, short, int, long, float, double, char, boolean)
+
+- non-primitive data types:
+- any class you want, you may create your own types
+- string: multiple characters together
+
+
+*/

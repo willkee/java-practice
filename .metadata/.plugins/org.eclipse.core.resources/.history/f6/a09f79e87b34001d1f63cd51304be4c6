@@ -1,0 +1,27 @@
+//class Vehicle { // class body
+//	
+//	// variable declarations must end in semicolon
+//	int speed;
+//	
+//	//method
+//	// void is the return type, name of the method, then parameters
+//	void accelerate() {
+//		// method body
+//		
+//	}
+//	
+//	// constructor
+//	Vehicle() {
+//		speed = 0;
+//		
+//	}
+//}
+
+public class HelloWorld {
+//	public static void main(String[] args) {
+//		System.out.println("Hello World!");
+//	}
+	static public void main(String[] args) {
+	System.out.println("Hello World!");
+}
+}

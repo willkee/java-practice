@@ -1,0 +1,27 @@
+package q2;
+
+public class While {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		loop();
+	}
+	
+	static void loop() {
+		boolean running = false;
+		
+		while (running) {
+			System.out.println("Running");
+			running = check();
+		}
+	}
+	
+	static boolean check() {
+		if (Math.random() < 0.5) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+}
