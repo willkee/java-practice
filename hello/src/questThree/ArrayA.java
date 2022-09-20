@@ -1,0 +1,23 @@
+package questThree;
+
+import java.util.ArrayList;
+
+public class ArrayA {
+
+	public static void main(String[] args) {
+		// Initial capacity of 2
+		ArrayList <String> list = new ArrayList<String>(2);
+		list.add("ABC");
+		list.add("DEF");
+		list.add("GHJ");
+		list.add("YZX");
+		
+		// access by index
+		System.out.println(list.get(2));
+		list.remove(0);
+		list.size();
+		
+		System.out.println(list);
+	}
+
+}

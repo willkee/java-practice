@@ -1,0 +1,26 @@
+package questThree;
+
+import java.util.HashSet;
+
+public class Party {
+
+	public static void main(String[] args) {
+		HashSet<Friend> friends = new HashSet<>();
+		friends.add(new Friend("Dan", 24));
+		friends.add(new Friend("Jane", 41));
+		System.out.println(friends);
+	}
+
+}
+
+class Friend {
+	String name;
+	int age;
+	Friend(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	public String toString() {
+		return name + " " + age;
+	}
+}

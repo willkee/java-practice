@@ -1,0 +1,53 @@
+package questThree;
+
+import java.util.HashSet;
+import java.util.Objects;
+
+public class Party {
+
+	public static void main(String[] args) {
+		HashSet<Friend> friends = new HashSet<>();
+		friends.add(new Friend("Dan", 24));
+		friends.add(new Friend("Jane", 41));
+		
+		// hashCode/equals memory location by default
+		friends.add(new Friend("Dan", 24));
+		System.out.println(friends);
+		boolean abc = friends.isEmpty();
+		System.out.println(abc);
+		
+		for (Friend f : friends) {
+			// do something
+			System.out.println(f);
+		}
+	}
+
+}
+
+class Friend {
+	String name;
+	int age;
+	Friend(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	public int hashCode() {
+		return Objects.hash(age, name);
+	}
+
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Friend other = (Friend) obj;
+		return age == other.age && Objects.equals(name, other.name);
+	}
+
+	public String toString() {
+		return name + " " + age;
+	}
+}

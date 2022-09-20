@@ -1,0 +1,8 @@
+Object equality
+java.lang.Object.equals method
+
+public boolean equals(Object other)
+
+By default, it checks the memory location
+Override the method to compare object state
+Some data structures require unique objects

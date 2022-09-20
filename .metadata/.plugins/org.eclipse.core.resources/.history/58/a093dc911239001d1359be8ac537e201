@@ -1,0 +1,24 @@
+package questThree;
+
+import java.util.HashMap;
+
+public class Country {
+
+	public static void main(String[] args) {
+		HashMap<String, Citizen>citizens = new HashMap<String, Citizen>();
+		
+		citizens.put("FB", new Citizen("Brian"));
+		citizens.put("4514", new Citizen("Diane"));
+		citizens.put("Ea", new Citizen("John"));
+		
+		System.out.println(citizens.get("FB").name);
+	}
+
+}
+
+class Citizen {
+	String name;
+	Citizen(String name) {
+		this.name = name;
+	}
+}

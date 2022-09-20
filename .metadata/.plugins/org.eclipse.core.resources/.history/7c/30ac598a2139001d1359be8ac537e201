@@ -1,0 +1,59 @@
+ArrayList
+
+- class in the collections API in Java
+- creates an array and provides methods for working with it
+	default size: 16
+- The size of the array is mutable
+- Grows 50% larger to accommodate more elements once it reaches capacity
+- allows duplicates
+- order of insertion is preserved
+
+Creates new array with 50% more space, copy previous array
+
+Array is a continuous block of memory. Linked list is not.
+
+Linked List
+- class in Collections API
+- Linear series of Nodes
+	- node wraps up a value (String, Pizza, etc)
+- linked by a reference to the next node
+- doubly-linked; previous and next reference
+- allows duplicates
+- preserves order
+
+Queue
+- interface in collections API
+- first in first out
+- push to tail
+- pop from head
+
+Stack
+- class in collections API
+- first in last out
+- push to tail
+- pop from tail
+- allows duplicates
+- order is preserved
+
+HashMap
+- class in collections API stores key-value pairs
+- key is used to identify value
+- SSN maps to a US Citizen
+- keys must be unique, no restriction on values
+- putting a value with the same key updates the value for that key
+- underneath, hashMaps stores "entry" objects in an array
+- object's hashCode helps calculate the array index to store it in
+- hashMap collisions occur when the calculation for 2 indexes have the same value
+	- appends the entry to a LinkedList
+
+
+hashSet
+- class in Collections API
+- stores unique objects
+- order not guaranteed
+- no index available
+- stores values inside of a hashMap
+
+set.add("Dan");
+
+

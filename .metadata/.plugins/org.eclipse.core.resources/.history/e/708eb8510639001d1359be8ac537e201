@@ -1,0 +1,12 @@
+ArrayList
+
+- class in the collections API in Java
+- creates an array and provides methods for working with it
+	default size: 16
+- The size of the array is mutable
+- Grows 50% larger to accommodate more elements once it reaches capacity
+- allows duplicates
+- order of insertion is preserved
+
+Creates new array with 50% more space, copy previous array
+

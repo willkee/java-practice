@@ -1,0 +1,29 @@
+ArrayList
+
+- class in the collections API in Java
+- creates an array and provides methods for working with it
+	default size: 16
+- The size of the array is mutable
+- Grows 50% larger to accommodate more elements once it reaches capacity
+- allows duplicates
+- order of insertion is preserved
+
+Creates new array with 50% more space, copy previous array
+
+Array is a continuous block of memory. Linked list is not.
+
+Linked List
+- class in Collections API
+- Linear series of Nodes
+	- node wraps up a value (String, Pizza, etc)
+- linked by a reference to the next node
+- doubly-linked; previous and next reference
+- allows duplicates
+- preserves order
+
+Queue
+- interface in collections API
+- first in first out
+- push to tail
+- pop from head
+

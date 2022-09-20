@@ -1,0 +1,23 @@
+package questThree;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class ArrayB {
+
+	public static void main(String[] args) {
+		List<Pickle> list = new LinkedList<Pickle>();
+		list.add(new Pickle("Dill"));
+		list.add(new Pickle("Sweet"));
+		
+		list.get(1);
+	}
+
+}
+
+class Pickle {
+	String flavor;
+	public Pickle(String flavor) {
+		this.flavor = flavor;
+	}
+}

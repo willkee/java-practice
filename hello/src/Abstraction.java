@@ -2,11 +2,10 @@
 public class Abstraction {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 //		Cannot instantiate shape because it is an abstract class
 //		Shape shape = new Shape();
-		
+
 	}
 
 }
@@ -26,4 +25,3 @@ class Square extends Shape {
 		return 10;
 	}
 }
-

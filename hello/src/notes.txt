@@ -1,0 +1,108 @@
+ArrayList
+
+- class in the collections API in Java
+- creates an array and provides methods for working with it
+	default size: 16
+- The size of the array is mutable
+- Grows 50% larger to accommodate more elements once it reaches capacity
+- allows duplicates
+- order of insertion is preserved
+
+Creates new array with 50% more space, copy previous array
+
+Array is a continuous block of memory. Linked list is not.
+
+Linked List
+- class in Collections API
+- Linear series of Nodes
+	- node wraps up a value (String, Pizza, etc)
+- linked by a reference to the next node
+- doubly-linked; previous and next reference
+- allows duplicates
+- preserves order
+
+Queue
+- interface in collections API
+- first in first out
+- push to tail
+- pop from head
+
+Stack
+- class in collections API
+- first in last out
+- push to tail
+- pop from tail
+- allows duplicates
+- order is preserved
+
+HashMap
+- class in collections API stores key-value pairs
+- key is used to identify value
+- SSN maps to a US Citizen
+- keys must be unique, no restriction on values
+- putting a value with the same key updates the value for that key
+- underneath, hashMaps stores "entry" objects in an array
+- object's hashCode helps calculate the array index to store it in
+- hashMap collisions occur when the calculation for 2 indexes have the same value
+	- appends the entry to a LinkedList
+
+
+hashSet
+- class in Collections API
+- stores unique objects
+- order not guaranteed
+- no index available
+- stores values inside of a hashMap
+
+set.add("Dan");
+
+First Normal Form
+- no repeating groups (multi-valued column)
+	only one value per column
+	
+Table must define a primary key
+	- a unique identified for a row
+
+Given a data set, you find candidate keys
+	- a reasonable choice for a primary key
+	- surrogate key for a order number or student Id. must be unique
+	
+
+Second Normal Form
+- Functional Dependence
+	- one value determines another
+	- Your birthday determines your age
+	- Order number determines the date the order was placed
+	- First name does not determine anything
+	- Example:
+		- Order 1, line 1, line 2, line 3 etc.
+		- Order 2, line 1
+		- Order 3, line 1
+		
+	Order date needs to be another table associated only with order number
+		- foreign key to order lines table containing line numbers
+		
+- No partial dependencies
+
+- Composite key
+	- two or more column primary key
+
+		
+Third Normal Form
+- No Transitive Dependencies
+	a column determined by a non-key attribute
+	
+	includes derived attributes, which should be calculated (not stored in DB)
+		- example: birthday determines age
+			- item price * quantity = line total
+			- sum of line total = sub-total
+			
+		- have a separate table for items to contain descriptions
+		- in 3NF, there is a table with nothing but keys
+
+"The Key" "The Whole Key" "Nothing But The Key" "So Help Me Codd"
+1NF            2NF               3NF                     BCNF (Boyce-Codd)
+
+			
+	
+
